@@ -1,21 +1,14 @@
-#include <bits/stdc++.h>
-
+#include "bits/stdc++.h"
 using namespace std;
 
-void test_case() {
-	int l, r;
-	cin >> l >> r;
-	cout << l << " " << l + l << "\n"; 
-}
+using ll = long long;
 
 int main() {
-	ios::sync_with_stdio(false);
-	cin.tie(0);
 	int T;
-	cin >> T;
-	for(int nr = 1; nr <= T; ++nr) {
-		test_case();
+	scanf("%d", &T);
+	while(T--) {
+		int l, r;
+		scanf("%d%d", &l, &r);
+		printf("%d %d\n", l, l + l);
 	}
-	//test_case();
-	return 0;
 }
